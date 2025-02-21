@@ -18,7 +18,7 @@ body, html {
 body {
   line-height: 1.4;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #e8e8e8;
 }
 
 header {
@@ -38,15 +38,15 @@ header {
 }
 
 .left-column .logo {
-  width: 120px; /* Small logo size */
+  width: 180px; /* Small logo size */
   height: auto;
-  margin: 0 0 0 -5px; /* 3px bottom spacing, no left space */
+  margin: 0 0 0 -10px; /* 3px bottom spacing, no left space */
   display: block;
 }
 
 .left-column h1 {
-  font-size: 1.5rem;
-  color: #C80F2E; /* Red heading */
+  font-size: 1rem;
+  color: #494949; /* Red heading */
   margin-bottom: 0.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -85,8 +85,8 @@ header {
 .left-column li {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #1d3557; /* Dark blue */
-  background: #f1f1f1;
+  color: #ffffff; /* Dark blue */
+  background: #525252;
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -207,12 +207,12 @@ footer a:hover {
       width: 100%;
       padding: 0;
   }
-  .left-column .logo { width: 100px; }
+  .left-column .logo { width: 100px; margin: 0 0 0 -5px; }
   .left-column h1 { font-size: 1.2rem; }
   .left-column .subtitle { font-size: 0.8rem; }
   .left-column p { font-size: 0.8rem; }
   .left-column ul { gap: 0.5rem; }
-  .left-column li { font-size: 1rem; font-weight: 100; padding: 0.15rem 0.5rem; }
+  .left-column li { font-size: 1rem; padding: 0.15rem 0.5rem; }
   .right-column iframe { height: 200px; margin-top: 10px; }
   footer {
       flex-direction: column;
