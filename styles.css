@@ -83,7 +83,7 @@ header {
 }
 
 .left-column li {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #1d3557; /* Dark blue */
   background: #f1f1f1;
@@ -148,6 +148,10 @@ section#content p {
   line-height: 1.6;
 }
 
+section#content a {
+  text-decoration: none; /* Remove underline */
+}
+
 section#workout-form {
   flex: 1;
   width: 100%;
@@ -208,7 +212,7 @@ footer a:hover {
   .left-column .subtitle { font-size: 0.8rem; }
   .left-column p { font-size: 0.8rem; }
   .left-column ul { gap: 0.3rem; }
-  .left-column li { font-size: 0.68rem; padding: 0.15rem 0.5rem; }
+  .left-column li { font-size: 0.80rem; padding: 0.15rem 0.5rem; }
   .right-column iframe { height: 200px; }
   footer {
       flex-direction: column;
@@ -224,13 +228,13 @@ footer a:hover {
   }
 
   section#content h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #C80F2E;
     margin-bottom: 10px;
   }
   
   section#content p {
-    font-size: 0.80rem;
+    font-size: 1.0rem;
     color: #333;
     line-height: 1.6;
   }
