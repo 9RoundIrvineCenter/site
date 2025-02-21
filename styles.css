@@ -21,8 +21,37 @@ body {
   background-color: #e8e8e8;
 }
 
+.navbar {
+  background: #ffffff;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  width: 180px;
+  height: auto;
+}
+
+.navbar .btn {
+  background: #C80F2E;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar .btn:hover {
+  background: #a00c24;
+}
+
 header {
-  background: white;
+  background: #F5F5F5; /* Keep the current background color */
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #C80F2E;
@@ -46,7 +75,7 @@ header {
 
 .left-column h1 {
   font-size: 1rem;
-  color: #494949; /* Red heading */
+  color: #000000; /* Keep the current text color */
   margin-bottom: 0.2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -54,12 +83,12 @@ header {
 
 .left-column .subtitle {
   font-size: 0.9rem;
-  color: #1d3557; /* Dark blue */
+  color: #C80F2E; /* Keep the current text color */
   margin-bottom: 1.0rem;
 }
 
 .left-column .subtitle a {
-  color: #C80F2E; /* Set link color to #C80F2E */
+  color: #C80F2E; /* Keep the current link color */
   text-decoration: none;
 }
 
@@ -69,7 +98,7 @@ header {
 
 .left-column p {
   font-size: 0.85rem;
-  color: #333;
+  color: white; /* Change text color to white */
   margin-bottom: 0.5rem;
 }
 
@@ -85,26 +114,11 @@ header {
 .left-column li {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #ffffff; /* Dark blue */
-  background: #525252;
+  color: #686868; /* Keep the current text color */
+  background: #ffffff;
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.left-column .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #C80F2E; /* Red button */
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.left-column .btn:hover {
-  background: #C80F2E; /* Darker red on hover */
 }
 
 .right-column {
@@ -208,7 +222,7 @@ footer a:hover {
       padding: 0;
   }
   .left-column .logo { width: 100px; margin: 0 0 0 -5px; }
-  .left-column h1 { font-size: 1.2rem; }
+  .left-column h1 { font-size: 1rem; }
   .left-column .subtitle { font-size: 0.8rem; }
   .left-column p { font-size: 0.8rem; }
   .left-column ul { gap: 0.5rem; }
