@@ -226,7 +226,7 @@ footer a:hover {
   .left-column .subtitle { font-size: 0.8rem; }
   .left-column p { font-size: 0.8rem; }
   .left-column ul { gap: 0.5rem; }
-  .left-column li { font-size: 1rem; padding: 0.15rem 0.5rem; }
+  .left-column li { font-size: 1rem; padding: 0.18rem 0.8rem; }
   .right-column iframe { height: 200px; margin-top: 10px; }
   footer {
       flex-direction: column;
