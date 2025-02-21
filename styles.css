@@ -81,9 +81,9 @@ a {
 }
 
 header {
-  padding: 20px;
+  padding: 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid #C80F2E;
+  border-bottom: 0px solid #C80F2E;
   display: flex;
   flex-direction: column; /* Stack elements vertically */
   align-items: center;
