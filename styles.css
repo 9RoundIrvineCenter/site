@@ -25,13 +25,39 @@ a {
   text-decoration: none; /* Remove underline from all links */
 }
 
+.header-container {
+  position: relative;
+  background: url('images/9Round-Irvine-Center-Dr.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  background-color: #333; /* Fallback background color */
+}
+
+.header-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px); /* Frosty overlay effect */
+  -webkit-backdrop-filter: blur(3px); /* Frosty overlay effect */
+  z-index: 1;
+}
+
+.header-container > *, .navbar > *, header > * {
+  position: relative;
+  z-index: 2;
+}
+
 .navbar {
-  background: #ffffff;
-  padding: 0 10px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: none; /* Remove background from navbar */
 }
 
 .navbar .logo {
@@ -55,18 +81,17 @@ a {
 }
 
 header {
-  background: #F5F5F5; /* Keep the current background color */
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #C80F2E;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  background: none; /* Remove background from header */
 }
 
 .left-column {
-  flex: 1;
-  text-align: left;
+  text-align: center; /* Center align text */
   padding: 0 1rem;
 }
 
@@ -78,15 +103,15 @@ header {
 }
 
 .left-column h1 {
-  font-size: 1rem;
+  font-size: 2.5rem; /* Increase font size */
   color: #000000; /* Keep the current text color */
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .left-column .subtitle {
-  font-size: 0.9rem;
+  font-size: 1.2rem; /* Increase font size */
   color: #C80F2E; /* Keep the current text color */
   margin-bottom: 1.0rem;
 }
@@ -111,6 +136,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  justify-content: center; /* Center align list items */
   margin: 0 0 0.5rem 0; /* Space before button */
   padding: 0;
 }
@@ -118,7 +144,7 @@ header {
 .left-column li {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #686868; /* Keep the current text color */
+  color: #545454; /* Keep the current text color */
   background: #ffffff;
   padding: 0.2rem 0.6rem;
   border-radius: 12px;
@@ -126,17 +152,17 @@ header {
 }
 
 .right-column {
-  flex: 1;
-  margin: 0;
-  padding: 0;
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Add space above the map */
 }
 
 .right-column iframe {
   width: 100%;
-  height: 100%; /* Full height of header */
+  height: 360px; /* Reduced height by 10% from 400px to 360px */
   border: none;
   display: block;
   margin: 0;
+  border-radius: 8px; /* Add rounded corners */
 }
 
 main {
@@ -226,8 +252,8 @@ footer a:hover {
       padding: 0;
   }
   .left-column .logo { width: 100px; margin: 0 0 0 -5px; }
-  .left-column h1 { font-size: 1rem; }
-  .left-column .subtitle { font-size: 0.8rem; }
+  .left-column h1 { font-size: 2rem; }
+  .left-column .subtitle { font-size: 1rem; }
   .left-column p { font-size: 0.8rem; }
   .left-column ul { gap: 0.5rem; }
   .left-column li { font-size: 1rem; padding: 0.18rem 0.8rem; }
