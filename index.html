@@ -59,11 +59,20 @@
 
     <!-- JavaScript to dynamically adjust content based on subdomain -->
     <script>
-        const hostname = window.location.hostname.toLowerCase();
+        console.log('Hostname:', window.location.hostname);
+        let hostname = window.location.hostname.toLowerCase();
+        const urlParams = new URLSearchParams(window.location.search);
+        const subdomainFromQuery = urlParams.get('subdomain');
+        
+        // If redirected from a subdomain, use the query parameter
+        if (hostname === '9roundirvine.com' && subdomainFromQuery) {
+            hostname = subdomainFromQuery + '.9roundirvine.com';
+        }
+        
         const title = document.querySelector('title');
         const metaDesc = document.querySelector('meta[name="description"]');
         const heading = document.getElementById('main-heading');
-
+        
         switch (hostname) {
             case 'kickboxing.9roundirvine.com':
             case 'kickboxing-irvine.9roundirvine.com':
@@ -84,9 +93,12 @@
                 heading.textContent = 'Fitness Training in Irvine, CA - 9Round Irvine Center Dr';
                 break;
             default:
-                // Keep the default title, meta description, and heading as fallback
+                title.textContent = '9Round Irvine Center Dr | Kickboxing & Boxing Fitness in Irvine, CA | Free Trial';
+                metaDesc.setAttribute('content', 'Get fit with kickboxing at 9Round Irvine Center Dr. Enjoy a free trial and result-driven training to boost strength, endurance, and fitness. Join today!');
+                heading.textContent = 'Kickboxing & Boxing Fitness in Irvine, CA - 9Round Irvine Center Dr';
                 break;
         }
+        console.log('Applied title:', title.textContent);
 
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
