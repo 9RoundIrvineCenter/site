@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Default title, overridden by JavaScript -->
     <title>9Round Irvine Center Dr | Kickboxing & Boxing Fitness in Irvine, CA | Free Trial</title>
+    <!-- Default meta description, overridden by JavaScript -->
     <meta name="description" content="Get fit with kickboxing at 9Round Irvine Center Dr. Enjoy a free trial and result-driven training to boost strength, endurance, and fitness. Join today!">
     <meta name="keywords" content="kickboxing classes Irvine, boxing gym Irvine, fitness training Irvine, 9Round Irvine Center Dr, free kickboxing trial">
+    <!-- Canonical tag pointing to the primary URL -->
+    <link rel="canonical" href="https://9roundirvine.com">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -21,7 +25,8 @@
         </nav>
         <header>
             <div class="left-column">
-                <h1>Kickboxing & Boxing Fitness in Irvine, CA - 9Round Irvine Center Dr</h1>
+                <!-- H1 will be dynamically updated -->
+                <h1 id="main-heading">Kickboxing & Boxing Fitness in Irvine, CA - 9Round Irvine Center Dr</h1>
                 <ul>
                     <a href="https://www.9round.com/locations/ca/irvine/irvine-center-dr#workout-form"><li>🕔 Open Daily 4 AM to 11 PM</li></a>
                     <a href="https://www.9round.com/locations/ca/irvine/irvine-center-dr#workout-form"><li>🥊 Full-Body Circuit Training</li></a>
@@ -51,5 +56,37 @@
         <p>Kickboxing & Boxing Fitness in Irvine, CA</p>
         <p><a href="https://maps.app.goo.gl/du685DQqw4gp3vbK9" target="_blank">6610 Irvine Center Dr, Irvine, CA 92618</a></p>
     </footer>
+
+    <!-- JavaScript to dynamically adjust content based on subdomain -->
+    <script>
+        const hostname = window.location.hostname.toLowerCase();
+        const title = document.querySelector('title');
+        const metaDesc = document.querySelector('meta[name="description"]');
+        const heading = document.getElementById('main-heading');
+
+        switch (hostname) {
+            case 'kickboxing.9roundirvine.com':
+            case 'kickboxing-irvine.9roundirvine.com':
+                title.textContent = 'Kickboxing Classes in Irvine, CA | 9Round Irvine Center Dr | Free Trial';
+                metaDesc.setAttribute('content', 'Join 9Round Irvine Center Dr for expert-led kickboxing classes in Irvine, CA. Try a free session and boost strength with our full-body workouts!');
+                heading.textContent = 'Kickboxing Classes in Irvine, CA - 9Round Irvine Center Dr';
+                break;
+            case 'boxing.9roundirvine.com':
+            case 'boxing-irvine.9roundirvine.com':
+                title.textContent = 'Boxing Gym in Irvine, CA | 9Round Irvine Center Dr | Free Trial';
+                metaDesc.setAttribute('content', 'Discover top boxing training at 9Round Irvine Center Dr. Enjoy a free trial and improve endurance with our Irvine, CA boxing gym!');
+                heading.textContent = 'Boxing Gym in Irvine, CA - 9Round Irvine Center Dr';
+                break;
+            case 'fitness.9roundirvine.com':
+            case 'fitness-irvine.9roundirvine.com':
+                title.textContent = 'Fitness Training in Irvine, CA | 9Round Irvine Center Dr | Free Trial';
+                metaDesc.setAttribute('content', 'Get fit at 9Round Irvine Center Dr with fitness training in Irvine, CA. Start with a free trial and enjoy our weekly challenges!');
+                heading.textContent = 'Fitness Training in Irvine, CA - 9Round Irvine Center Dr';
+                break;
+            default:
+                // Keep the default title, meta description, and heading as fallback
+                break;
+        }
+    </script>
 </body>
 </html>
