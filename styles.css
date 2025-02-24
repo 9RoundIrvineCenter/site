@@ -58,6 +58,14 @@ a {
   justify-content: space-between;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background: none; /* Remove background from navbar */
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar.blur {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Apply blur effect for Safari */
 }
 
 .navbar .logo {

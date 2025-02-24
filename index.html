@@ -87,6 +87,15 @@
                 // Keep the default title, meta description, and heading as fallback
                 break;
         }
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) { // Adjust the scroll value as needed
+                navbar.classList.add('blur');
+            } else {
+                navbar.classList.remove('blur');
+            }
+        });
     </script>
 </body>
 </html>
