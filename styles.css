@@ -113,7 +113,8 @@ header {
 .left-column h1 {
   font-size: 2.5rem; /* Increase font size */
   color: #C80F2E; /* Keep the current text color */
-  margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -145,7 +146,7 @@ header {
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center; /* Center align list items */
-  margin: 0 0 0.5rem 0; /* Space before button */
+  margin: 0 0 0.8rem 0; /* Space before button */
   padding: 0;
 }
 
@@ -161,7 +162,7 @@ header {
 
 .right-column {
   width: 100%; /* Full width */
-  margin-top: 20px; /* Add space above the map */
+  margin-top: 30px; /* Add space above the map */
 }
 
 .right-column iframe {
