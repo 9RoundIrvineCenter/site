@@ -119,6 +119,25 @@ header {
   letter-spacing: 0.5px;
 }
 
+#main-heading {
+    font-size: 3rem; /* Increase font size */
+    color: #000; /* Change text color to black */
+    margin-top: 2rem;
+    margin-bottom: 0.5rem; /* Adjust margin to accommodate sub-heading */
+    font-weight: 800; /* Make the font bolder */
+    letter-spacing: 1px; /* Increase letter spacing */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Add white shadow with blur effect */
+}
+
+#sub-heading {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #000; /* Change text color to black */
+    margin-bottom: 2rem; /* Space below sub-heading */
+    font-weight: 500; /* Slightly bolder font */
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Add white shadow with blur effect */
+}
+
 .left-column .subtitle {
   font-size: 1.2rem; /* Increase font size */
   color: #C80F2E; /* Keep the current text color */
