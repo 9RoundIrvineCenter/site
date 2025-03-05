@@ -27,7 +27,7 @@ a {
 
 .header-container {
   position: relative;
-  background: url('images/9Round-Irvine-Center-Dr.jpg') no-repeat center center;
+  background: url('images/9Round-Irvine-Center.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
   background-color: #333; /* Fallback background color */
@@ -40,7 +40,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px); /* Frosty overlay effect */
   -webkit-backdrop-filter: blur(3px); /* Frosty overlay effect */
   z-index: 1;
@@ -121,21 +121,21 @@ header {
 
 #main-heading {
     font-size: 3rem; /* Increase font size */
-    color: #000; /* Change text color to black */
+    color: #fff; /* Change text color to white */
     margin-top: 2rem;
     margin-bottom: 0.5rem; /* Adjust margin to accommodate sub-heading */
     font-weight: 800; /* Make the font bolder */
     letter-spacing: 1px; /* Increase letter spacing */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Add white shadow with blur effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add black shadow */
 }
 
 #sub-heading {
     font-size: 1.2rem; /* Slightly larger font size */
-    color: #000; /* Change text color to black */
+    color: #fff; /* Change text color to white */
     margin-bottom: 2rem; /* Space below sub-heading */
     font-weight: 500; /* Slightly bolder font */
     letter-spacing: 0.5px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Add white shadow with blur effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add black shadow */
 }
 
 .left-column .subtitle {
