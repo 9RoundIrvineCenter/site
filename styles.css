@@ -126,7 +126,7 @@ header {
     margin-bottom: 0.5rem; /* Adjust margin to accommodate sub-heading */
     font-weight: 800; /* Make the font bolder */
     letter-spacing: 1px; /* Increase letter spacing */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add black shadow */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);  Add black shadow */
 }
 
 #sub-heading {
@@ -135,7 +135,7 @@ header {
     margin-bottom: 2rem; /* Space below sub-heading */
     font-weight: 500; /* Slightly bolder font */
     letter-spacing: 0.5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add black shadow */
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); Add black shadow */
 }
 
 .left-column .subtitle {
@@ -170,12 +170,12 @@ header {
 }
 
 .left-column li {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   font-weight: 600;
   color: #545454; /* Keep the current text color */
   background: rgba(0, 0, 0, 0.7);
-  padding: 0.2rem 0.6rem;
-  border-radius: 12px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -227,9 +227,8 @@ main {
 section#content {
   padding: 20px;
   background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  margin: 15px; /* Ensure margin of 15px */
 }
 
 section#content h2 {
@@ -328,6 +327,10 @@ footer a:hover {
       padding: 10px;
   }
 
+  section#content {
+    margin: 15px; /* Ensure margin of 15px on smaller screens */
+  }
+  
   section#content h2 {
     font-size: 1.4rem;
     color: #C80F2E;
@@ -340,4 +343,10 @@ footer a:hover {
     line-height: 1.6;
   }
   section#workout-form iframe { height: 80vh; }
+}
+
+@media (min-width: 850px) and (max-width: 1190px) {
+  section#content {
+    margin: 15px; /* Ensure margin of 15px for medium screens */
+  }
 }
