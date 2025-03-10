@@ -271,9 +271,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f1f1f1;
+  background-color: #222; /* Darker background for modern look */
   font-size: 14px;
-  color: #000; /* Set footer text color to black */
+  color: #fff; /* White text color for contrast */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-top: 2px solid #C80F2E;
@@ -286,16 +286,44 @@ footer p {
   margin: 0;
   padding: 0 10px;
   font-size: 0.9rem;
-  color: #000; /* Set footer text color to black */
+  color: #fff; /* White text color for contrast */
 }
 
 footer a {
-  color: #C80F2E; /* Set link color to #C80F2E */
-  text-decoration: none;
+  color: #fff; /* Set link color to white */
+  text-decoration: none; /* Remove underline */
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+footer a img {
+  height: 20px;
+  margin-right: 10px; /* Add space between logo and text */
+}
+
+.footer-logo {
+  height: 22px; /* Increase logo size by 10% */
+  margin-right: 10px; /* Add space between logo and text */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.short-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show only 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#show-more {
+  display: none;
+  color: #C80F2E;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -316,15 +344,25 @@ footer a:hover {
   .right-column iframe { height: 200px; margin-top: 10px; }
   footer {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center; /* Center align items */
       padding: 10px;
+  }
+  .footer-logo {
+      height: 29px; /* Increase logo size by 10% */
+      margin-bottom: 5px; /* Add space below the logo */
+      margin-right: 0; /* Remove right margin */
+  }
+  .footer-content {
+      flex-direction: column;
+      align-items: center; /* Center align items */
   }
   footer p {
-      padding: 5px 0;
-      font-size: 0.85rem;
+      padding: 0px 0;
+      font-size: 0.80rem;
+      text-align: center; /* Center align text */
   }
   main {
-      padding: 10px;
+      padding: 10px 10px 0px 10px;
   }
 
   section#content {
@@ -343,6 +381,22 @@ footer a:hover {
     line-height: 1.6;
   }
   section#workout-form iframe { height: 80vh; }
+
+  #show-more {
+    display: block; /* Show the "Show more..." link on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .short-content {
+    display: block; /* Show full content on desktop */
+    -webkit-line-clamp: unset; /* Remove line clamp */
+    -webkit-box-orient: unset;
+    overflow: visible;
+  }
+  #show-more {
+    display: none; /* Hide the "Show more..." link on desktop */
+  }
 }
 
 @media (min-width: 850px) and (max-width: 1190px) {
